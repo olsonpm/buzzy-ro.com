@@ -1,0 +1,33 @@
+{
+  "name": "buzzy-ro.com",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "clean-css-cli": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-personal": "github:olsonpm/eslint-config-personal",
+    "prettier": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": "personal",
+    "globals": {
+      "anime": true
+    }
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

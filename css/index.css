@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Poiret One';
+  src: url('../font/PoiretOne-Regular.ttf') format('truetype');
+}
+
+body {
+  background-image: url('../img/prism.png');
+  background-repeat: repeat;
+  font-family: Poiret One, serif;
+}
+
+#site-container {
+  background-image: url('../img/main-extended.png');
+  background-size: 1200px auto;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 1200px;
+}
+
+header {
+  background-color: rgba(50, 50, 50, 0.7);
+  border-bottom: 1px solid white;
+  padding: 12px 12px 2px;
+}
+
+header > img {
+  height: 80px;
+}
+
+main {
+  background-color: rgba(50, 50, 50, 0.85);
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+main a {
+  background-color: #ecd5ff;
+  border: 1px solid black;
+  color: black;
+  font-size: 30px;
+  display: inline-block;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+main a + a {
+  margin-left: 32px;
+}
+
+#more {
+  display: inline-block;
+  opacity: 0;
+}
+
+#show-more {
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  rotate: 45deg;
+  vertical-align: top;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 1400px) {
+  #site-container {
+    margin-top: 100px;
+  }
+}
+
+/*---------------------*/
+/* hover.css overrides */
+/*---------------------*/
+
+.hvr-ripple-out {
+  box-shadow: 0 0 1px black;
+}
+.hvr-ripple-out::before {
+  border: #ecd5ff solid 6px;
+}
