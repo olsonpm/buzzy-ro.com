@@ -10,7 +10,7 @@ body {
 }
 
 #site-container {
-  background-image: url('../img/main-extended.png');
+  background-image: url('../img/main.jpg');
   background-size: 1200px auto;
   border: 1px solid white;
   display: flex;
