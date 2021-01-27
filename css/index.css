@@ -68,7 +68,8 @@ main a + a {
   height: 40px;
   width: 40px;
   margin-top: 10px;
-  rotate: 45deg;
+  outline: none;
+  transform: rotate(45deg);
   vertical-align: top;
 }
 

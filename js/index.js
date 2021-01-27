@@ -38,7 +38,7 @@ function show() {
     anime({
       duration,
       easing,
-      rotate: 180,
+      rotate: [45, 225],
       targets: '#show-more',
     }).finished,
   ])
@@ -55,7 +55,7 @@ function hide() {
     anime({
       duration,
       easing,
-      rotate: 0,
+      rotate: [225, 45],
       targets: '#show-more',
     }).finished,
   ]).then(() => {
