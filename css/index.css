@@ -26,11 +26,19 @@ body {
 header {
   background-color: rgba(50, 50, 50, 0.7);
   border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
   padding: 12px 12px 2px;
 }
 
 header > img {
   height: 80px;
+}
+
+header > h2 {
+  color: white;
+  padding-top: 15px;
+  font-size: 30px;
 }
 
 main {
