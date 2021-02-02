@@ -3,13 +3,37 @@
   src: url('../font/PoiretOne-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Lora';
+  src: url('../font/Lora-VariableFont_wght.ttf') format('truetype');
+}
+
 body {
   background-image: url('../img/prism.png');
   background-repeat: repeat;
+  font-family: Lora, serif;
+}
+
+a {
   font-family: Poiret One, serif;
 }
 
+h2 {
+  color: white;
+  font-weight: 500;
+}
+
 #site-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.desktop {
+  margin-bottom: 120px;
+}
+
+.desktop .lead {
   background-image: url('../img/main.jpg');
   background-size: 1200px auto;
   border: 1px solid white;
@@ -17,13 +41,10 @@ body {
   flex-direction: column;
   height: 600px;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 50px;
-  width: 1200px;
 }
 
-header {
+.desktop header {
   background-color: rgba(50, 50, 50, 0.7);
   border-bottom: 1px solid white;
   display: flex;
@@ -31,17 +52,16 @@ header {
   padding: 12px 12px 2px;
 }
 
-header > img {
+.desktop header > img {
   height: 80px;
 }
 
-header > h2 {
-  color: white;
+.desktop header > h2 {
   padding-top: 15px;
   font-size: 30px;
 }
 
-main {
+.desktop .content {
   background-color: rgba(50, 50, 50, 0.85);
   border-top: 1px solid white;
   display: flex;
@@ -49,7 +69,7 @@ main {
   padding: 12px;
 }
 
-main a {
+.desktop .content a {
   background-color: #ecd5ff;
   border: 1px solid black;
   color: black;
@@ -60,8 +80,16 @@ main a {
   text-decoration: none;
 }
 
-main a + a {
+.desktop .content a + a {
   margin-left: 32px;
+}
+
+.desktop .server-info {
+  margin-top: 60px;
+}
+
+.desktop .server-info h2 {
+  font-size: 40px;
 }
 
 #more {
@@ -81,6 +109,69 @@ main a + a {
   vertical-align: top;
 }
 
+.mobile {
+  margin-bottom: 60px;
+}
+
+.mobile > header {
+  border-bottom: 1px solid white;
+}
+
+.mobile .container {
+  padding: 20px 30px;
+}
+
+.mobile > header .container {
+  padding-bottom: 10px;
+}
+
+.mobile p {
+  color: white;
+  font-size: 30px;
+}
+
+.mobile p + p {
+  margin-top: 20px;
+}
+
+.mobile .buttons {
+  margin-top: 40px;
+}
+
+.mobile a {
+  background-color: #ecd5ff;
+  border: 1px solid black;
+  color: black;
+  font-family: Poiret One, serif;
+  font-size: 30px;
+  display: block;
+  margin-top: 30px;
+  max-width: 300px;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mobile .server-info {
+  margin-top: 20px;
+  border-top: 1px solid white;
+}
+
+.mobile h2 {
+  font-size: 50px;
+}
+
+ul {
+  color: white;
+  font-size: 25px;
+  list-style-position: inside;
+  margin-top: 20px;
+}
+
+.mobile li + li {
+  margin-top: 6px;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -88,6 +179,22 @@ main a + a {
 @media only screen and (min-width: 1400px) {
   #site-container {
     margin-top: 100px;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+  .mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .desktop {
+    display: none !important;
   }
 }
 
